@@ -1,0 +1,79 @@
+.bgDark {
+	background-color: $my-class-bg-dark;
+}
+.bgLight {
+	background-color: $my-class-bg-light;
+}
+.colorDark {
+	color: $dark-text-color;
+}
+.colorLight {
+	color: $light-text-color;
+}
+.darkMode {
+	background-color: $my-class-bg-dark;
+	color: $dark-text-color;
+}
+.lightMode {
+	background-color: $my-class-bg-light;
+	color: $light-text-color;
+}
+/* Light mode */
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: $my-class-bg-light;
+		color: $light-text-color;
+	}
+}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: $my-class-bg-dark;
+		color: $dark-text-color;
+	}
+}
+.lightModeBootstrap {
+	background-color: $my-class-bg-light-bootstrap;
+	color: $light-text-color;
+}
+.input-light-mode::placeholder {
+	color: $dark-text-color;
+}
+.input-dark-mode::placeholder {
+	color: $light-text-color;
+}
+.navbar-toggle {
+	border: none;
+}
+html[class='darkMode'] {
+	a {
+		color: White !important;
+	}
+}
+html[class='lightMode'] {
+	a {
+		color: black !important;
+	}
+}
+.darkModeMobile {
+	@media (max-width: 1024px) {
+		background-color: $my-class-bg-dark;
+		color: $dark-text-color;
+	}
+}
+.lightModeMobile {
+	@media (max-width: 1024px) {
+		background-color: $my-class-bg-light;
+		color: $light-text-color;
+	}
+}
+html[lang='fa'] {
+	.Toastify__toast {
+		font-family: $font-family !important;
+	}
+}
+html[lang='en'] {
+	.Toastify__toast {
+		font-family: $en-font-family;
+	}
+}

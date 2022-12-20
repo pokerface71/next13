@@ -1,0 +1,64 @@
+.btn {
+	&.btn-border {
+		border-radius: $border-radius-xs;
+		&.isLoading:before {
+			border-radius: $border-radius-xl;
+		}
+	}
+	&.isLoading {
+		pointer-events: none;
+		&:after {
+			border-width: rem(5px);
+			width: rem(32px);
+			height: rem(32px);
+			margin: rem(-16px);
+		}
+	}
+	&.btnSecondary {
+		background-color: $colorSecondary;
+		color: white;
+		&:hover {
+			background-color: darken($colorSecondary, 5);
+		}
+	}
+	&.btnTertiary {
+		background-color: $colorTertiary;
+		color: white;
+		&:hover {
+			background-color: darken($colorTertiary, 5);
+		}
+	}
+
+	&.is-thin {
+		line-height: rem(16px);
+	}
+	&.btn-outline-danger {
+		color: $danger;
+		border-color: $danger;
+		background-color: transparent;
+		&:hover {
+			color: darken($danger, 5);
+		}
+		&:not(:disabled):not(.disabled):active,
+		&:not(:disabled):not(.disabled).active {
+			color: $danger;
+			border-color: $danger;
+			background-color: transparent;
+		}
+	}
+	&.btn-no-border {
+		border: none;
+		box-shadow: none;
+		&:not(:disabled):not(.disabled):active,
+		&:not(:disabled):not(.disabled).active {
+			border: none;
+			box-shadow: none;
+		}
+	}
+	.btn-icon {
+		position: absolute;
+		right: rem(5px);
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}

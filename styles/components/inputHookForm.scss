@@ -1,0 +1,160 @@
+.input-form-hook {
+	font-size: 0;
+	margin-bottom: rem(10px);
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	&.input-form-hook--input--responsive {
+		width: 100%;
+	}
+	&.px-1 {
+		.input-form-hook--icon {
+			padding-right: rem(10px);
+		}
+	}
+
+	.input-form-hook--input {
+		width: 100%;
+		border: none;
+		font-size: rem(12px);
+		padding: rem(10px);
+		border-radius: rem(5px);
+
+		&:focus,
+		&:active {
+			-webkit-box-shadow: none;
+			-webkit-text-fill-color: none;
+			outline: none;
+		}
+	}
+	input:read-only,
+	textarea:read-only {
+		&:not(.input-picker--input) {
+			opacity: 0.6;
+			pointer-events: none;
+			background-color: transparent;
+		}
+	}
+	.is-read-only {
+		opacity: 0.6;
+		pointer-events: none;
+		background-color: transparent;
+	}
+
+	.input-form-hook--icon {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		left: 0;
+		width: rem(24px);
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		pointer-events: none;
+	}
+	.input-form-hook--password-icon {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		width: rem(24px);
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		&.right-5 {
+			right: 0;
+		}
+		&.left-5 {
+			left: 0;
+		}
+	}
+	.input-form-hook--error {
+		color: red;
+		position: relative;
+		bottom: -50%;
+		font-size: rem(10px);
+		margin-bottom: rem(-5px);
+	}
+	&.is-textarea {
+		.input-form-hook--input {
+			height: auto;
+		}
+		.input-form-hook--error {
+			margin-bottom: rem(-5px);
+		}
+	}
+	&.is-file-uploader {
+		.input-form-hook--label {
+			position: relative;
+			display: block;
+			width: 100%;
+			padding: rem(6px);
+			border: 1px dashed;
+			border-radius: rem(15px);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.input-form-hook--file-upload-icon {
+			display: block;
+			text-align: center;
+			font-size: rem(24px);
+			margin-top: rem(16px);
+			transform: translateY(-32px);
+		}
+		&:hover {
+			.input-form-hook--file-upload-icon {
+				animation: bounce 1.4s linear infinite;
+			}
+		}
+		.input-form-hook--clear-icon {
+			position: absolute;
+			top: 50%;
+			left: 0;
+		}
+	}
+	&.input-form-hook--by-unit {
+		.input-form-hook--input:last-child {
+			// @apply rounded-r-none border-l-0;
+			position: absolute;
+			// @apply absolute top-1 left-2 w-24 border-0 text-xs rounded-none h-8 border-r-1;
+		}
+	}
+
+	.react-calendar-datetime-picker .input-picker {
+		.input-form-hook--input {
+			width: 100%;
+			font-size: rem(12px);
+			border: 2px solid;
+			border-radius: rem(15px);
+			padding: rem(2px) rem(16px);
+			&:focus {
+				border-color: $activeColor;
+				outline: none;
+			}
+		}
+	}
+}
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translate(0);
+	}
+}
+html[class='lightMode'] {
+	.input-dark-mode {
+		background-color: $colorSecondary;
+		color: $dark-text-color;
+	}
+	::placeholder {
+		color: $dark-text-color;
+	}
+}

@@ -1,0 +1,35 @@
+body {
+	#__next {
+		.home-bg {
+			min-height: 100vh;
+			@media (min-width: 768px) {
+				background-repeat: no-repeat;
+				&.rtl {
+					background-image: url('../../public/images/bg-baaz.png');
+					background-position: top right;
+				}
+				&.ltr {
+					background-image: url('../../public/images/bg-baaz-left.png');
+					background-position: top left;
+				}
+			}
+		}
+	}
+}
+
+body[class='lightMode'] {
+	#__next {
+		.home-bg {
+			background-color: $my-class-bg-light;
+			color: $light-text-color;
+		}
+	}
+}
+body[class='darkMode'] {
+	#__next {
+		.home-bg {
+			background-color: $my-class-bg-dark;
+			color: $dark-text-color;
+		}
+	}
+}

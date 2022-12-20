@@ -1,0 +1,32 @@
+$header-height: 92px;
+$footer-height: 429px;
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.main-content {
+	min-height: calc(100vh - #{$header-height + $footer-height});
+	&.is-central {
+		min-height: 100vh !important;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	&.main-margin-top {
+		padding-top: rem(100px) !important;
+	}
+}
+.main-content-into {
+	padding-top: 5.3rem;
+	@media (min-width: 768px) {
+		margin-bottom: rem(100px);
+	}
+}
+a {
+	text-decoration: none;
+	color: unset;
+}

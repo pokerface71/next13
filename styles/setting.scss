@@ -1,0 +1,60 @@
+///////////////////////////////////
+/////////////  color  /////////////
+///////////////////////////////////
+$base-bg: #f9f9f9;
+$footer-bg: #1d1d1d;
+///////////////////////
+///////////////////////
+/////// color ////////
+///////////////////////
+///////////////////////
+$colorPrimary: #c7c7c7;
+$colorSecondary: #808080;
+$colorTertiary: #95877c;
+$colorQuaternary: #000000;
+$home-bg: #cfcfcf;
+//==============================
+$colorPrimaryDark: #121212;
+$colorSecondaryDark: #045757;
+$colorTertiaryDark: #044343;
+$colorّQuaternaryDark: #e4e4e4;
+//==============================
+$text: $colorQuaternary;
+$activeColor: #007bff;
+$colorBlackLight: #505050;
+$lightBootstrap: #f8f9fa;
+$colorIllustrator: #cfcfcf;
+$isGray: #cccccc;
+//===============================
+$skeletonFirstColor: hsl(200, 20%, 80%);
+$skeletonSecondColor: hsl(200, 20%, 95%);
+///////////////////////////////////
+/////////////  theme  /////////////
+///////////////////////////////////
+$light-text-color: #000000;
+$dark-text-color: #eeeeee;
+$my-class-bg-light: $colorIllustrator;
+$my-class-bg-light-bootstrap: $lightBootstrap;
+$my-class-bg-dark: $colorPrimaryDark;
+///////////////////////////////////
+/////////////  others  /////////////
+///////////////////////////////////
+$font-family: IRANSans, sans-serif;
+$en-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$black-light: rgba(0, 0, 0, 0.1);
+$black-light-v2: rgba(0, 0, 0, 0.4);
+$background-loading: rgba(255, 255, 255, 0.4);
+////////bootstrap///////////////
+$bs-dark: $colorPrimaryDark;
+
+////////border-radius///////////////
+$border-radius-xs: 0.2rem;
+$border-radius-sm: 0.4rem;
+$border-radius-md: 0.8rem;
+$border-radius-lg: 1.6rem;
+$border-radius-xl: 3.2rem;
+///////// box-shadow///////////////
+$box-shadow-main: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+$box-shadow-sideBar: rem(-24px) 0px rem(68px) rem(-28px) rgba(0, 0, 0, 0.1);
+////// z- index /////////////////
+$loader-z-index: 1000;

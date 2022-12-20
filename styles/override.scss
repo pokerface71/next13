@@ -1,0 +1,36 @@
+html[lang='en'] {
+	#nprogress {
+		.spinner {
+			right: rem(15px) !important;
+			left: auto !important;
+		}
+		.bar {
+			left: 0 !important;
+			right: auto !important;
+		}
+	}
+}
+html[lang='fa'] {
+	#nprogress {
+		.spinner {
+			left: rem(15px) !important;
+			right: auto !important;
+		}
+		.bar {
+			right: 0 !important;
+			left: auto !important;
+		}
+	}
+}
+.dropdown-toggle::after {
+	display: none !important;
+}
+.navbar-light {
+	.navbar-toggler {
+		border: none;
+		.collapsed {
+			border: none;
+			background-color: transparent;
+		}
+	}
+}
